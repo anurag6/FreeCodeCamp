@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:Medium');
+
+.jumbotron{
+	background: none;
+}
+.blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    font-size: 17.5px;
+    border-left: 5px solid rgba(110,110,110,0.5);
+    border-right: 5px solid rgba(110,110,110,0.5);
+}
+
+#quoteAuthor{
+	color: rgba(110,110,110,0.5);
+	font-family: 'Dosis',Arial;
+	font-weight: 'light';
+	font-size: 2.5rem;
+}
+#quoteText{
+	color: rgba(110,110,110,1);
+	font-family: 'Dosis',Arial;
+	font-weight: 'Extra-Bold';
+	font-size: 5rem;
+}
+
+#twitico, #comico {
+	color: rgba(110,110,110,0.5);
+}
+
+@font-fa

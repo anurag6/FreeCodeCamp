@@ -1,0 +1,95 @@
+.live{
+	font-family: 'Alegreya Sans SC', sans-serif !important;
+	color: red !important;
+}
+
+.offline{
+	font-family: 'Alegreya Sans SC', sans-serif !important;
+	color: gray !important;
+}
+
+.preview{
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+.profileImage{
+	width:20%;
+	height: auto;
+	padding-bottom: 15%;
+}
+
+.streamStatusDiv{
+	margin: 5px;
+}
+
+.previewDiv{
+	margin: 5px;
+}
+
+.streamingDiv{
+	margin: 5px;
+	font-family: "Oswald", sans-serif;
+}
+
+.streamNameDiv{
+	display: inline-block;
+	margin-left: 1rem;
+}
+
+.streamName{
+	display:block;
+	margin: 0px !important;
+	font-size: 2.2rem !important;
+	font-family: "Dosis", sans-serif;
+}
+
+.streamStatus{
+	display: block;
+	margin: 0px !important;
+	font-size: 2rem !important;	
+}
+
+.card{
+	padding: 5px;
+	padding-top: 10px;
+	background-color: #F7F7F7;
+	border: 10px solid transparent;
+	background-clip: padding-box !important;
+}
+
+.card:hover, .card:active, .card:focus, .card:target{
+	border: 2px solid rgba(196, 196, 196, 0.6) !important;
+ 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(196, 196, 196, 0.6) !important;
+}
+
+.cardLink {
+	position:absolute; 
+  	width:100%;
+  	height:100%;
+  	top:0;
+  	left: 0;
+  	z-index: 1;
+}
+
+.twitchHead{
+	font-family: 'Black Ops One';
+	height: 10rem !important;
+	background-color: #5C2AA4;
+	color: #F7F7F7;
+}
+
+.absentPlaceHolder{
+	background-color: #5C2AA4;
+	color: #F7F7F7;
+	text-align: center;
+	font-family: "Dosis", sans-serif;
+	height: 100%
+	width:100%;
+}
+
+h1{
+	margin: -2.5rem !important;
+}
+

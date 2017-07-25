@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="javascript.js"></script>	
+	
+	<link href="https://fonts.googleapis.com/css?family=Dosis|Oswald:light" rel="stylesheet">
+</head>
+<body>
+	<div class="jumbotron">
+		<div class="container">
+			<form id="searchForm" onsubmit="return false;">
+				<div class="row">
+					<div class="" id="InputBar">
+						<div class="searchBar col-xs-9">
+							<div class="input-group">
+								<input type="text" class="form-control" name="searchText" id="searchInput" required="yes"></input>
+								<span class="input-group-btn">
+									<button class="btn btn-default" type="button" id="wikiSearchButton">WikiSearch</button>
+								</span>								
+							</div>
+						</div>
+						<div class="" id="randomButton col-xs-3">
+							<button class="btn btn-default" type="button" id="randomWikiButton" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random')">Random</button>							
+						</div>			
+					</div>
+				</div>	
+				<div class="row" id="searchContainer">
+					
+				</div>		
+			</form>
+		</div>		
+	</div>	
+</body>

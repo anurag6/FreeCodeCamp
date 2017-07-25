@@ -1,0 +1,51 @@
+.cardLink {
+	position:absolute; 
+  	width:100%;
+  	height:100%;
+  	top:0;
+  	left: 0;
+  	z-index: 1;
+}
+
+
+
+.card {
+	border: 2px solid transparent;
+    /*padding: 5% 0;
+    text-align: justify;*/
+    background-clip: padding-box !important;
+    background: #F9F9F9;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+p {
+	color: #565656 !important;
+	text-align: justify;
+	font-family: 'Oswald', sans-serif;
+	font-size: 2rem !important;
+}
+
+h2 {
+	color: #565656 !important;
+	text-align: left;
+	font-family: 'Dosis', sans-serif;
+}
+
+.jumbotron {
+	background: #F5F5F5 !important;
+}
+
+body {
+	background: #F5F5F5 !important;
+}
+
+.card:hover, .card:active, .card:focus, .card:target{
+	border: 2px solid rgba(196, 196, 196, 0.6);
+ 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(196, 196, 196, 0.6);
+}
+
+#searchInput:focus {
+	border: 2px solid rgba(196, 196, 196, 0.6) !important;
+ 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(196, 196, 196, 0.6) !important;
+}

@@ -1,0 +1,127 @@
+/* Popup container - can be anything you want */
+/*#details, #temperature, #weatherGraphic{
+    border: 1px solid black;
+}*/
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: visible;
+    width: 80%;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 10%;
+    /*margin-left: -80px;*/
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.popup .hide {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.5s, opacity 0.5s linear;
+}
+
+input {
+    margin: 5px;
+}
+
+.findbutton{
+    width: 80%;
+    height: 80%;
+}
+
+#coordinateFormContainer {
+    border-left: 1px solid white;
+}
+
+#shareLocationButton {
+    border-right: 1px solid white;
+}
+
+.card {    
+    border: 15px solid transparent;
+    padding: 5% 0;
+    text-align: center;
+    background-clip: padding-box !important;
+    background: #0F56CA;
+}
+
+body {
+    background: #0F75CA;
+}
+
+.jumbotron {
+    background: #0F75CA;
+}
+
+#currentTemp{
+    text-align: center;
+}
+#maxTemp{
+    text-align: right;
+    border-right: 1px solid #E5E5E5;
+}
+#minTemp {
+    text-align: left;
+    border-left: 1px solid #E5E5E5;
+}
+
+#currentTemp p{
+    font-size: 13vh !important;
+}
+
+#weatherIcon p{
+    font-size: 15vh;
+}
+
+#details p {
+    text-align: left;
+    padding-left: 20%;
+}
+
+#locationTime p{
+    font-size: 13vh;
+}
+
+#localTime p{
+    text-align: right;
+    font-size: 2vh;
+    padding: 0;
+}
+
+p {
+	color: #E5E5E5 !important;
+}
