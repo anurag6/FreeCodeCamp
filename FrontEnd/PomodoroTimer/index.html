@@ -16,18 +16,54 @@
 	<script type="text/javascript" src="javascript.js"></script>
 	<script type="text/javascript" src="https://cdn.rawgit.com/aterrien/jQuery-Knob/755309e9/js/jquery.knob.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 </head>
-<body class="jumbotron">
+<body>
+	<p id="heading">Pomodoro Timer</p>
 	<div id="timerContainer">
-		<div id="timerDisplayDiv">
-			<h2 id="timerDisplayText"></h2>
+		<div id="timerDisplayDiv" style="border: 1px solid #000000;">
+			<div id="dispmode"><p id="timerDisplayMode"></p></div>
+			<div id="disptext"><p id="timerDisplayText"></p></div>
+			<div id="dispdial" style="pointer-events: none; ">
+				<canvas width="400" height="750"></canvas>
+				<input id="dispdialinput" type="text" value="0" class="dial" data-width="400" data-height="750" data-displayprevious="true" data-skin="tron"  data-displayinput="false" data-thickness=".05" style="width: 41px; height: 25px; position: absolute; vertical-align: middle; margin-top: 25px; margin-left: -58px; border: 0px; background: none; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Arial; text-align: center; color: rgb(255, 236, 3); padding: 0px; -webkit-appearance: none;">
+
+				<script>
+				    $(".dial").knob({
+				    	
+				    });
+				</script>
+			</div>
+			
 		</div>
 	</div>
-	<input type="text" value="75" class="dial">
+	<div id="dials" style="border: 1px solid #000000;">
+		<div id="workdial" style="display:inline;width:150px;height:200px;">
+			<canvas width="150" height="200"></canvas>
+			<input type="text" value="25" class="dial" data-width="150" data-displayprevious="true" data-skin="tron" data-cursor="true" data-thickness=".2" style="width: 41px; height: 25px; position: absolute; vertical-align: middle; margin-top: 25px; margin-left: -58px; border: 0px; background: none; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Arial; text-align: center; color: rgb(255, 236, 3); padding: 0px; -webkit-appearance: none;">
 
-	<script>
-	    $(".dial").knob({
-	        'change' : function (v) { console.log(v); }
-	    });
-	</script>
+			<script>
+			    $(".dial").knob({
+			    	'release' : function (v) { 
+			    		updateWorkTimer(v); 
+			    	}
+			    });
+			</script>
+		</div>
+		<div id="restdial" style="display:inline;width:150px;height:200px;">
+			<canvas width="150" height="200"></canvas>
+			<input type="text" value="5" class="dial" data-width="150" data-displayprevious="true" data-skin="tron" data-cursor="true" data-thickness=".2" style="width: 41px; height: 25px; position: absolute; vertical-align: middle; margin-top: 25px; margin-left: -58px; border: 0px; background: none; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Arial; text-align: center; color: rgb(255, 236, 3); padding: 0px; -webkit-appearance: none;">
+
+			<script>
+			    $(".dial").knob({
+			    	'release' : function (v) { 
+			    		updateRestTimer(v); 
+			    	}
+			    });
+			</script>
+		</div>
+	</div>
+
+	
+	
 </body>
