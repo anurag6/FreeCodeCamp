@@ -13,7 +13,7 @@ var getStreamerObj = function(userName){
 };
 
 var lookUpLiveStream = function(user){
-	var streamURL = "https://wind-bow.gomix.me/twitch-api/streams/" + user.name;
+	var streamURL = "https://wind-bow.glitch.me/twitch-api/streams/" + user.name;
 	console.log("lookUpLiveStream:streamURL:"+streamURL);
 
 	var xHttp = new XMLHttpRequest();
@@ -69,7 +69,7 @@ var processStreamInfo = function(userObj, jsonResp){
 };
 
 var checkIfUserExists = function(userObj){
-	var channelURL = "https://wind-bow.gomix.me/twitch-api/channels/" + userObj.name;
+	var channelURL = "https://wind-bow.glitch.me/twitch-api/channels/" + userObj.name;
 	console.log("checkIfUserExists:url:"+channelURL);
 
 	var xHttp = new XMLHttpRequest();

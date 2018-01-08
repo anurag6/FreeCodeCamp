@@ -52,7 +52,7 @@ var LAST_COORDINATES={
 };
 
 var WEATHER_API_KEY="86a213de5db42c231e4f1ad24d64c312";
-var WEATHER_API_SITE="http://api.openweathermap.org/data/2.5/weather?";
+var WEATHER_API_SITE="https://api.openweathermap.org/data/2.5/weather?";
 
 var LAST_FETCHED_WEATHER = {};
 
