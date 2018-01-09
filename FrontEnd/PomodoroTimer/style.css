@@ -14,7 +14,8 @@
 
 #dispdial{
 	/*position: absolute;*/
-	top: -700px !important;
+	top: -500px !important;
+	margin-top: -200px;
 	left: 0;
 }
 
@@ -25,7 +26,7 @@
 	width: 220px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 910px;
+	margin-top: 710px;
 	z-index: 10;
 	text-align: center;
 	font-family: Arial;
@@ -34,16 +35,42 @@
 	font-size: 45px;
 }
 
+#dispmode{
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 620px;
+	z-index: 10;
+	text-align: center;
+	font-family: 'Bungee Inline', cursive;
+	color: rgb(135, 206, 235);
+	font-weight: bold !important;
+	font-size: 45px;
+}
+
 #dials{
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 300px;
+	margin-top: 100px;
 	width: 800px;
+	font-family: 'Bungee Inline', cursive;
+	text-align: center;
 }
 
 #timerDisplayText{
 	margin-top: 10px;	
 	margin-bottom: 10px;
+}
+
+#timerDisplayMode{
+	margin-top: 10px;	
+	margin-bottom: 10px;
+}
+
+#workdial{
 }
 
 #heading{
@@ -53,4 +80,14 @@
 	text-align: center;
 	font-family: 'Bungee Inline', cursive;
 	color: #222222;
+}
+
+.diallabel{
+	color: rgb(135, 206, 235);
+	font-weight: bold;
+	font-size: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	margin-top: -15px;
 }

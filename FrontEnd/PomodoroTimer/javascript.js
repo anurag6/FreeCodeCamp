@@ -85,10 +85,15 @@ function numFormat(num){
 
 function updateDisplay(){
 	var timerDisplayText = document.getElementById("timerDisplayText");
+	var timerDisplayMode = document.getElementById("timerDisplayMode");
 	var hours = Math.floor(timerCount/3600000);
 	var minutes = Math.floor((timerCount%3600000)/60000);
 	var seconds = Math.floor((timerCount%60000)/1000);
 	//console.log("Hours:"+hours+" minutes:"+minutes+" seconds:"+seconds);
+	if (mode == Mode.WORK)
+		timerDisplayMode.innerHTML = "Work";
+	else
+		timerDisplayMode.innerHTML - "Rest";
 	timerDisplayText.innerHTML = numFormat(minutes)+":"+numFormat(seconds);
 	if (hours>0) {
 		timerDisplayText.innerHTML = numFormat(hours)+":"+timerDisplayText.innerHTML;

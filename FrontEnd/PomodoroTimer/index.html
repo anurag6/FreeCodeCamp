@@ -37,11 +37,12 @@
 			
 		</div>
 	</div>
-	<div id="dials" style="border: 1px solid #000000;">
-		<div id="workdial" style="display:inline;width:150px;height:200px;">
-			<canvas width="150" height="200"></canvas>
+	<div id="dials" style="border: 1px solid #000000;"> 
+		<div id="workdial" style="border: 1px solid #000000;" class="col-xs-6">
+			<canvas width="150" height="10"></canvas>
+			<div class="fig">
 			<input type="text" value="25" class="dial" data-width="150" data-displayprevious="true" data-skin="tron" data-cursor="true" data-thickness=".2" style="width: 41px; height: 25px; position: absolute; vertical-align: middle; margin-top: 25px; margin-left: -58px; border: 0px; background: none; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Arial; text-align: center; color: rgb(255, 236, 3); padding: 0px; -webkit-appearance: none;">
-
+			</div>
 			<script>
 			    $(".dial").knob({
 			    	'release' : function (v) { 
@@ -49,11 +50,13 @@
 			    	}
 			    });
 			</script>
+			<p class="diallabel">Work</p>
 		</div>
-		<div id="restdial" style="display:inline;width:150px;height:200px;">
-			<canvas width="150" height="200"></canvas>
+		<div id="restdial" style="border: 1px solid #000000;" class="col-xs-6">
+			<canvas width="150" height="10"></canvas>
+			<div class="fig">
 			<input type="text" value="5" class="dial" data-width="150" data-displayprevious="true" data-skin="tron" data-cursor="true" data-thickness=".2" style="width: 41px; height: 25px; position: absolute; vertical-align: middle; margin-top: 25px; margin-left: -58px; border: 0px; background: none; font-style: normal; font-variant: normal; font-weight: bold; font-stretch: normal; font-size: 15px; line-height: normal; font-family: Arial; text-align: center; color: rgb(255, 236, 3); padding: 0px; -webkit-appearance: none;">
-
+			</div>
 			<script>
 			    $(".dial").knob({
 			    	'release' : function (v) { 
@@ -61,6 +64,7 @@
 			    	}
 			    });
 			</script>
+			<p class="diallabel">Rest</p>
 		</div>
 	</div>
 
