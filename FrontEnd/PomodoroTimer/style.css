@@ -10,6 +10,7 @@
 
 #timerDisplayDiv{	
 	/*position: relative;	*/
+	color: #60AEE5;
 }
 
 #dispdial{
@@ -30,7 +31,6 @@
 	z-index: 10;
 	text-align: center;
 	font-family: Arial;
-	color: rgb(135, 206, 235);
 	font-weight: bold !important;
 	font-size: 45px;
 }
@@ -46,7 +46,7 @@
 	z-index: 10;
 	text-align: center;
 	font-family: 'Bungee Inline', cursive;
-	color: rgb(135, 206, 235);
+	
 	font-weight: bold !important;
 	font-size: 45px;
 }
@@ -58,6 +58,7 @@
 	width: 800px;
 	font-family: 'Bungee Inline', cursive;
 	text-align: center;
+	color: #60AEE5;
 }
 
 #timerDisplayText{
@@ -73,6 +74,10 @@
 #workdial{
 }
 
+#restdial{
+	color: #FF6700;
+}
+
 #heading{
 	font-weight: bold;
 	font-family: ;
@@ -83,7 +88,7 @@
 }
 
 .diallabel{
-	color: rgb(135, 206, 235);
+	
 	font-weight: bold;
 	font-size: 25px;
 	margin-left: auto;

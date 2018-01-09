@@ -60,7 +60,18 @@ function switchModes(){
 	var switchTo = (mode == Mode.WORK) ? Mode.REST : Mode.WORK;
 	resetTimerCountTo(TimerCount[switchTo]);
 	mode = switchTo;
-	//TODO: Update display characteristics
+	//TODO: Update display characteristics	
+	var color = "#60AEE5";
+	if(mode == Mode.REST)
+		color = "#FF6700";
+	var timerDisplay = document.getElementById("timerDisplayDiv");
+	timerDisplay.style.color = color;
+	$("#dispdialinput").trigger(
+		'configure',
+		{
+			"fgColor":color
+		}
+	);
 };
 
 var handleTimeout = function(){
@@ -93,7 +104,7 @@ function updateDisplay(){
 	if (mode == Mode.WORK)
 		timerDisplayMode.innerHTML = "Work";
 	else
-		timerDisplayMode.innerHTML - "Rest";
+		timerDisplayMode.innerHTML = "Rest";
 	timerDisplayText.innerHTML = numFormat(minutes)+":"+numFormat(seconds);
 	if (hours>0) {
 		timerDisplayText.innerHTML = numFormat(hours)+":"+timerDisplayText.innerHTML;
